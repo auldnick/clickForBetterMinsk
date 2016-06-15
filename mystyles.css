@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	height:100%;
+	font-family: 'Open Sans', sans-serif; 
+	font-weight: 300;
+	font-size:0;
+}
+
+.container{
+  	width: 100%;
+  	text-align:center;
+	margin-top:150px;
+	margin-right:10px;
+	marginleft:10px;	
+	position:relative;
+ }
+
+
+.btn {
+	border: 1px solid #888888;
+	border-radius: 20px;
+    	border-color: #d43f3a;	
+	color: #fff;
+	padding: 20px 30px 20px 30px;
+	max-width:400px;
+	max-height:150px;
+	font-size:22px;
+	letter-spacing:1px;
+	cursor: pointer;
+	display: inline-block;
+	text-shadow: 0px 1px 1px #555;
+	outline: none;
+	position: relative;
+	background: #d9534f;
+	-webkit-transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	-moz-transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+.btn-success {
+	color: transparent;
+	box-shadow: 0px 2px 2px #888888;
+	text-shadow:none;
+	outline: none;
+	top:2px;
+	background: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.btn-success:after {
+	color: #fff;
+	left: 0;
+	right:0;
+	position: absolute;
+	text-shadow:0px 1px 1px #555;
+	content: "Минск лучше!";
+	-webkit-animation: moveUp 1s;
+	-moz-animation: moveUp 1s;
+	animation: moveUp 1s;
+}
+
+
+.btn-eng {
+	border: 1px solid #888888;
+	border-radius: 20px;
+    	border-color: #d43f3a;	
+	color: #fff;
+	padding: 20px 15px 20px 15px;
+	max-width:400px;
+	max-height:150px;
+	font-size:20px;
+	letter-spacing:1px;
+	cursor: pointer;
+	display: inline-block;
+	text-shadow: 0px 1px 1px #555;
+	outline: none;
+	position: relative;
+	background: #d9534f;
+	-webkit-transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	-moz-transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	transition: background 1s ease-out, box-shadow 0.3s ease-out;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+
+.btn-success-eng {
+	color: transparent;
+	box-shadow: 0px 2px 2px #888888;
+	padding: 20px 15px 20px 15px;
+	text-shadow:none;
+	outline: none;
+	top:2px;
+	background: #5cb85c;
+	border-color: #4cae4c;
+}
+
+.btn-success-eng:after {
+	color: #fff;
+	left: 0;
+	right:0;
+	position: absolute;
+	text-shadow:0px 1px 1px #555;
+	content: "The world is a better place!";
+	-webkit-animation: moveUp 1s;
+	-moz-animation: moveUp 1s;
+	animation: moveUp 1s;
+}
+
+@-webkit-keyframes moveUp {
+	0% {
+		/*-webkit-transform: translateY(50%);*/
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		/*-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes moveUp {
+	0% {
+		/*-moz-transform: translateY(50%);*/
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		/*-moz-transform: translateY(0);*/
+	}
+}
+
+@keyframes moveUp {
+	0% {
+		/*transform: translateY(50%);*/
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		/*transform: translateY(0);*/
+	}
+}
+
+.congrats { 
+	font-size:16px;
+	display:none;
+	padding-top:15px;
+	-webkit-animation: moveUp1 1s;
+	-moz-animation: moveUp1 1s;
+	animation: moveUp1 1s;
+	color:#555;
+}
+
+@-webkit-keyframes moveUp1 {
+	0% {
+		-webkit-transform: translateY(30%);
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-moz-keyframes moveUp1 {
+	0% {
+		-moz-transform: translateY(30%);
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+
+@keyframes moveUp1 {
+	0% {
+		transform: translateY(30%);
+		opacity: 0;
+	}
+	100% { 
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.click-count {
+	display:inline; margin-right:0;
+}
+
+.footer {
+	position:fixed;
+	bottom:0;
+	width:100%;
+	padding-bottom:20px;
+	display:none;
+	font-size:12px;
+	color:#555;
+}
+
+.table {display:table; width:100%;}
+
+.share {
+	text-align:left;
+	width:50%;
+	display:table-cell;
+	padding-left:40px;
+}
+
+
+#fb, #vk {
+	display:inline-block;
+	margin-right:15px;
+}
+
+.version {
+	text-align: right;
+	width:50%;
+	display:table-cell;
+	padding-right:40px;
+}
+
+@media only screen and (max-width: 450px) {
+    .table, .share, .share-buttons, .version {
+	display:block;
+	text-align:center;
+	width:100%;
+	padding:0;
+}
